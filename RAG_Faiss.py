@@ -82,7 +82,7 @@ db = FAISS.from_documents(docs, embedding_model)
 
 
 #OpenAI Chat Model (GPT)
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="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")
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="API KEY to be added here")
 
 #Retrieval-based QA Chain
 qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=db.as_retriever())
